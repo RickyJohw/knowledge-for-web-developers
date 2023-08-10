@@ -1,1 +1,1 @@
-# Knowledge fo frontend developers
+# Knowledge for web developers
