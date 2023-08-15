@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Flexbox layout can ignore the whitespace goes between two
+      inline/inline-block elements
+    </title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      .container {
+        padding: 30px;
+      }
+      .wrapper-flexbox {
+        display: flex;
+      }
+      .item-inline-block {
+        display: inline-block;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 class="container">
+        Flexbox layout can ignore the whitespace goes between two
+        inline/inline-block elements
+      </h1>
+    </header>
+    <main>
+      <div class="container">
+        <h2>inline</h2>
+        <div class="wrapper-normal">
+          <input type="text" />
+          <input type="text" />
+        </div>
+        <div class="wrapper-flexbox">
+          <input type="text" />
+          <input type="text" />
+        </div>
+        <h2>inline-block</h2>
+        <div class="wrapper-normal">
+          <input type="text" class="item-inline-block" />
+          <input type="text" class="item-inline-block" />
+        </div>
+        <div class="wrapper-flexbox">
+          <input type="text" class="item-inline-block" />
+          <input type="text" class="item-inline-block" />
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
