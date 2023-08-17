@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>hiding float</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .avatar {
+        float: left;
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+        border-radius: 30px;
+        background-color: #d6e9fe;
+      }
+
+      .username {
+        overflow: hidden;
+      }
+
+      .comment {
+        text-align: justify;
+        margin: 10px;
+        overflow: hidden; /* This is important */
+      }
+      .component-comment {
+        padding: 20px;
+        border-radius: 20px;
+        background-color: rgba(9, 9, 9, 0.1);
+        width: 600px;
+        margin: 0 auto;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="component-comment">
+      <div class="avatar"></div>
+      <h3 class="username">Steve Jobs</h3>
+      <p class="comment">
+        Your time is limited, so don't waste it living someone else's life.
+        Don't be trapped by dogma — which is living with the results of other
+        people's thinking. Don't let the noise of others' opinions drown out
+        your own inner voice. And most important, have the courage to follow
+        your heart and intuition.
+      </p>
+    </div>
+  </body>
+</html>
